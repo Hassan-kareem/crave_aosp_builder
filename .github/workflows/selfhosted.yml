@@ -36,19 +36,19 @@ on:
       LOCAL_MANIFEST:
         description: "Personal local manifest [repository or raw]:"
         required: true
-        default: 'https://github.com/sounddrill31/local_manifests'
+        default: 'https://github.com/hassan-kareem/local_manifests'
       LOCAL_MANIFEST_BRANCH:
         description: "Personal local manifest's branch:"
         required: false
-        default: 'lineage-oxygen'
+        default: '20.0-mido'
       DEVICE_NAME:
         description: "Device's codename:"
         required: true
-        default: "oxygen"
+        default: "mido"
       PRODUCT_NAME:
         description: "Product to build:"
         required: true
-        default: "lineage_oxygen"
+        default: "lineage_mido"
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: true
@@ -137,7 +137,7 @@ jobs:
         "LineageOS 20.0")
           export PROJECTFOLDER="/crave-devspaces/Lineage20"
           export PROJECTID="36"
-          export REPO_INIT="repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --depth=1"
+          export REPO_INIT="repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs --depth=1"
         ;;
         "CipherOS 14")
           export PROJECTFOLDER="/crave-devspaces/Cipher14"
