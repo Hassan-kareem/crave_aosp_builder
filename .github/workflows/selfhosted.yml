@@ -444,8 +444,9 @@ jobs:
         /opt/crave/resync.sh  && \
         
         # Set up build environment
-        export BUILD_USERNAME=${{ github.actor }} ; \
+        export BUILD_USERNAME=Hassan ; \
         export BUILD_HOSTNAME=crave ; \
+        export TZ=Asia/Kolkata ; \
         source build/envsetup.sh && \
 
         echo "Repository: ${{ github.repository }}"; \
